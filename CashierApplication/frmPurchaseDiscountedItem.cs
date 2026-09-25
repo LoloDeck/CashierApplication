@@ -4,15 +4,26 @@ using ItemNamespace;
 
 namespace CashierApplication
 {
-    public partial class Form1 : Form
+    public partial class frmPurchaseDiscountedItem : Form
     {
         private Item? item;
 
-        public Form1()
+        public bool IsLoggingOut { get; private set; } = false;
+
+        public frmPurchaseDiscountedItem()
         {
             InitializeComponent();
             submitBtn.Click += submitBtn_Click;
             ComputeBtn.Click += ComputeBtn_Click;
+        }
+        private void logoutToolStripMenuItem_Click(object? sender, EventArgs e)
+        {
+            IsLoggingOut = true;
+            this.Close();
+        }
+        private void exitApplicationToolStripMenuItem_Click(object? sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void submitBtn_Click(object? sender, EventArgs e)
@@ -91,5 +102,7 @@ namespace CashierApplication
                 );
             }
         }
+
+        
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace CashierApplication
 {
-    partial class Form1
+    partial class frmPurchaseDiscountedItem
     {
         /// <summary>
         ///  Required designer variable.
@@ -44,13 +44,18 @@
             submitBtn = new Button();
             lblChange = new Label();
             changeTxtbox = new TextBox();
+            menuStrip1 = new MenuStrip();
+            fileToolStripMenuItem = new ToolStripMenuItem();
+            logoutToolStripMenuItem = new ToolStripMenuItem();
+            exitApplicationToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // lblitem
             // 
             lblitem.AutoSize = true;
             lblitem.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblitem.Location = new Point(37, 21);
+            lblitem.Location = new Point(37, 60);
             lblitem.Name = "lblitem";
             lblitem.Size = new Size(56, 25);
             lblitem.TabIndex = 0;
@@ -60,7 +65,7 @@
             // 
             lblDiscount.AutoSize = true;
             lblDiscount.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblDiscount.Location = new Point(299, 21);
+            lblDiscount.Location = new Point(299, 60);
             lblDiscount.Name = "lblDiscount";
             lblDiscount.Size = new Size(122, 25);
             lblDiscount.TabIndex = 1;
@@ -69,7 +74,7 @@
             // itemTxtbox
             // 
             itemTxtbox.Font = new Font("Segoe UI", 11F);
-            itemTxtbox.Location = new Point(37, 49);
+            itemTxtbox.Location = new Point(37, 88);
             itemTxtbox.Name = "itemTxtbox";
             itemTxtbox.Size = new Size(235, 32);
             itemTxtbox.TabIndex = 2;
@@ -77,7 +82,7 @@
             // discountTxtbox
             // 
             discountTxtbox.Font = new Font("Segoe UI", 11F);
-            discountTxtbox.Location = new Point(300, 49);
+            discountTxtbox.Location = new Point(300, 88);
             discountTxtbox.Name = "discountTxtbox";
             discountTxtbox.Size = new Size(156, 32);
             discountTxtbox.TabIndex = 3;
@@ -86,7 +91,7 @@
             // 
             lblPrice.AutoSize = true;
             lblPrice.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblPrice.Location = new Point(37, 96);
+            lblPrice.Location = new Point(37, 135);
             lblPrice.Name = "lblPrice";
             lblPrice.Size = new Size(64, 25);
             lblPrice.TabIndex = 4;
@@ -95,7 +100,7 @@
             // priceTxtbox
             // 
             priceTxtbox.Font = new Font("Segoe UI", 11F);
-            priceTxtbox.Location = new Point(93, 92);
+            priceTxtbox.Location = new Point(93, 131);
             priceTxtbox.Name = "priceTxtbox";
             priceTxtbox.Size = new Size(179, 32);
             priceTxtbox.TabIndex = 5;
@@ -104,7 +109,7 @@
             // 
             lblQuantity.AutoSize = true;
             lblQuantity.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblQuantity.Location = new Point(300, 96);
+            lblQuantity.Location = new Point(300, 135);
             lblQuantity.Name = "lblQuantity";
             lblQuantity.Size = new Size(92, 25);
             lblQuantity.TabIndex = 6;
@@ -113,7 +118,7 @@
             // QuantityTxtbox
             // 
             QuantityTxtbox.Font = new Font("Segoe UI", 11F);
-            QuantityTxtbox.Location = new Point(401, 93);
+            QuantityTxtbox.Location = new Point(401, 132);
             QuantityTxtbox.Name = "QuantityTxtbox";
             QuantityTxtbox.Size = new Size(55, 32);
             QuantityTxtbox.TabIndex = 7;
@@ -122,7 +127,7 @@
             // 
             ComputeBtn.BackColor = Color.Crimson;
             ComputeBtn.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ComputeBtn.Location = new Point(37, 146);
+            ComputeBtn.Location = new Point(37, 185);
             ComputeBtn.Name = "ComputeBtn";
             ComputeBtn.Size = new Size(147, 45);
             ComputeBtn.TabIndex = 8;
@@ -134,7 +139,7 @@
             // 
             lblTotalAmount.AutoSize = true;
             lblTotalAmount.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTotalAmount.Location = new Point(190, 156);
+            lblTotalAmount.Location = new Point(190, 195);
             lblTotalAmount.Name = "lblTotalAmount";
             lblTotalAmount.Size = new Size(138, 25);
             lblTotalAmount.TabIndex = 9;
@@ -144,7 +149,7 @@
             // 
             totalAmountTxtbox.BorderStyle = BorderStyle.None;
             totalAmountTxtbox.Font = new Font("Segoe UI", 11F);
-            totalAmountTxtbox.Location = new Point(323, 153);
+            totalAmountTxtbox.Location = new Point(323, 192);
             totalAmountTxtbox.Name = "totalAmountTxtbox";
             totalAmountTxtbox.Size = new Size(133, 25);
             totalAmountTxtbox.TabIndex = 10;
@@ -153,7 +158,7 @@
             // 
             lblPayment.AutoSize = true;
             lblPayment.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblPayment.Location = new Point(37, 224);
+            lblPayment.Location = new Point(37, 263);
             lblPayment.Name = "lblPayment";
             lblPayment.Size = new Size(174, 25);
             lblPayment.TabIndex = 11;
@@ -162,7 +167,7 @@
             // paymentTxtbox
             // 
             paymentTxtbox.Font = new Font("Segoe UI", 11F);
-            paymentTxtbox.Location = new Point(213, 221);
+            paymentTxtbox.Location = new Point(213, 260);
             paymentTxtbox.Name = "paymentTxtbox";
             paymentTxtbox.Size = new Size(130, 32);
             paymentTxtbox.TabIndex = 12;
@@ -171,7 +176,7 @@
             // 
             submitBtn.BackColor = Color.Crimson;
             submitBtn.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            submitBtn.Location = new Point(349, 217);
+            submitBtn.Location = new Point(349, 256);
             submitBtn.Name = "submitBtn";
             submitBtn.Size = new Size(107, 38);
             submitBtn.TabIndex = 13;
@@ -183,7 +188,7 @@
             // 
             lblChange.AutoSize = true;
             lblChange.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblChange.Location = new Point(126, 278);
+            lblChange.Location = new Point(126, 317);
             lblChange.Name = "lblChange";
             lblChange.Size = new Size(81, 25);
             lblChange.TabIndex = 14;
@@ -193,17 +198,49 @@
             // 
             changeTxtbox.BorderStyle = BorderStyle.None;
             changeTxtbox.Font = new Font("Segoe UI", 11F);
-            changeTxtbox.Location = new Point(213, 278);
+            changeTxtbox.Location = new Point(213, 317);
             changeTxtbox.Name = "changeTxtbox";
             changeTxtbox.Size = new Size(133, 25);
             changeTxtbox.TabIndex = 15;
             // 
-            // Form1
+            // menuStrip1
+            // 
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(494, 33);
+            menuStrip1.TabIndex = 16;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { logoutToolStripMenuItem, exitApplicationToolStripMenuItem });
+            fileToolStripMenuItem.Font = new Font("Segoe UI", 11F);
+            fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            fileToolStripMenuItem.Size = new Size(55, 29);
+            fileToolStripMenuItem.Text = "File";
+            // 
+            // logoutToolStripMenuItem
+            // 
+            logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            logoutToolStripMenuItem.Size = new Size(229, 30);
+            logoutToolStripMenuItem.Text = "Logout";
+            logoutToolStripMenuItem.Click += logoutToolStripMenuItem_Click;
+            // 
+            // exitApplicationToolStripMenuItem
+            // 
+            exitApplicationToolStripMenuItem.Name = "exitApplicationToolStripMenuItem";
+            exitApplicationToolStripMenuItem.Size = new Size(229, 30);
+            exitApplicationToolStripMenuItem.Text = "Exit Application";
+            exitApplicationToolStripMenuItem.Click += exitApplicationToolStripMenuItem_Click;
+            // 
+            // frmPurchaseDiscountedItem
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Info;
-            ClientSize = new Size(494, 334);
+            ClientSize = new Size(494, 388);
             Controls.Add(changeTxtbox);
             Controls.Add(lblChange);
             Controls.Add(submitBtn);
@@ -220,8 +257,12 @@
             Controls.Add(itemTxtbox);
             Controls.Add(lblDiscount);
             Controls.Add(lblitem);
-            Name = "Form1";
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
+            Name = "frmPurchaseDiscountedItem";
             Text = "Purchase Discounted Item";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -244,5 +285,9 @@
         private Button submitBtn;
         private Label lblChange;
         private TextBox changeTxtbox;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem fileToolStripMenuItem;
+        private ToolStripMenuItem logoutToolStripMenuItem;
+        private ToolStripMenuItem exitApplicationToolStripMenuItem;
     }
 }
